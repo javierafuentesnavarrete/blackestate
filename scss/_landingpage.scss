@@ -1,0 +1,175 @@
+.container {
+  background-image: url(/images/landing.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding: 0;
+  height: 100vh;
+
+  &__heading {
+    font-family: $font-headings;
+    color: $font-color;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    left: 40%;
+    font-size: 50px;
+  }
+  &__text {
+    cursor: pointer;
+    font-family: $font-headings;
+    color: $font-color;
+    position: absolute;
+    justify-content: center;
+    text-align: center;
+    top: 75%;
+    left: 40%;
+  }
+}
+
+.aboutus {
+  display: flex;
+  flex-wrap: inherit;
+  position: relative;
+  font-family: $font-body;
+  line-height: $line-height;
+  background-color: $container-color;
+  margin: 0px 100px;
+  padding: 30px;
+
+  &__img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__info {
+    font-family: $font-body;
+    text-align: center;
+    padding: 0 20px;
+  }
+
+  &__h1 {
+    font-family: $font-headings;
+  }
+}
+
+.links,
+.links2 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+
+  margin: 0px 100px;
+  padding: 0;
+  height: 45vh;
+
+  &__restaurant {
+    background-image: url(/images/restaurant.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+  }
+
+  &__wine {
+    background-image: url(/images/wine.jpg);
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+    width: 100%;
+  }
+
+  &__tours {
+    background-image: url(/images/winetour.jpg);
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+    width: 100%;
+  }
+
+  &__stay {
+    background-image: url(/images/accommodation.jpg);
+    background-repeat: no-repeat;
+
+    background-size: 100%;
+    width: 100%;
+  }
+
+  &__button1 {
+    @include button;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+
+    &:hover {
+      color: #f8d5a0;
+    }
+  }
+
+  &__button2 {
+    @include button;
+    position: absolute;
+    top: 40%;
+    left: 60%;
+  }
+
+  &__button3 {
+    @include button;
+    position: absolute;
+    bottom: 40%;
+    left: 8%;
+  }
+
+  &__button4 {
+    @include button;
+    position: absolute;
+    bottom: 40%;
+    left: 60%;
+  }
+}
+
+footer {
+  margin-top: 40px;
+  background-color: white;
+  padding: 10px 20px;
+  border-top: 1px solid rgb(77, 77, 77);
+  cursor: pointer;
+}
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0px 100px;
+  align-items: flex-start;
+  padding: 10px 10px;
+  font-family: $font-body;
+
+  &__info {
+    padding: 0px 30px;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  &__socialmedia {
+    padding: 0px 100px;
+    align-items: center;
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+  }
+
+  h3 {
+    padding: 10px 0;
+  }
+
+  h3:hover {
+    &:hover {
+      color: rgb(168, 168, 168);
+    }
+  }
+}

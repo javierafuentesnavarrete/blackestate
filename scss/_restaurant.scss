@@ -1,0 +1,139 @@
+.restauranttext {
+  background-image: url(/images/restaurantpage.jpg);
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position: start;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+
+  &__h2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $font-headings;
+    color: $font-color;
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    font-size: 60px;
+  }
+}
+
+.restaurant {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 30px;
+  background-color: $container-color;
+  font-family: $font-body;
+  text-align: center;
+  line-height: $line-height;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.boldp {
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+}
+
+.booking {
+  background-color: $container-color;
+  display: flex;
+  flex-direction: row;
+  font-family: $font-body;
+  margin: auto;
+  width: 80%;
+  padding: 20px;
+
+  &__table {
+    margin-right: 10px;
+  }
+  &__final {
+    margin-bottom: 20px;
+    padding: 0px 10px;
+    line-height: $line-height;
+    text-align: left;
+  }
+}
+
+.groups {
+  margin-left: 20px;
+
+  &__imgdish {
+    position: relative;
+    left: 20%;
+    margin-top: 10%;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-family: $font-headings;
+  margin: 10px;
+  padding: 10px;
+}
+
+.textthree {
+  text-align: start;
+  padding: 10px;
+  margin: 0;
+  line-height: $line-height;
+  font-weight: normal;
+
+  &__bold {
+    font-weight: bold;
+    font-family: sans-serif;
+  }
+}
+
+h3 {
+  font-family: $font-body;
+}
+
+.dropdown__1 {
+  text-align: start;
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.guests {
+  @include select;
+}
+
+.month {
+  @include select;
+}
+
+.date {
+  @include select;
+}
+
+label {
+  padding: 20px 10px 10px 0px;
+  font-size: 20px;
+}
+
+button {
+  position: relative;
+  left: 20%;
+  background-color: $botton-color;
+  font-size: 1.5em;
+  font-family: $font-headings;
+  padding: 10px;
+  width: 60%;
+  border-radius: 7px;
+  border: 3px solid $botton-color;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: transparent;
+
+  border: 3px solid $botton-color;
+}

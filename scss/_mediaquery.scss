@@ -1,0 +1,136 @@
+@media screen and (max-width: 1000px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .navbar-links ul li {
+    text-align: center;
+  }
+
+  .navbar-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .container {
+    display: block;
+    &__heading {
+      position: relative;
+      top: 15%;
+      left: 0%;
+      line-height: 100px;
+    }
+
+    &__text {
+      position: relative;
+      top: 20%;
+      left: 0%;
+      line-height: 40px;
+    }
+  }
+
+  .aboutus {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+
+    &__img {
+      display: flex;
+      flex-wrap: wrap;
+      // width: 80%;
+    }
+
+    &__info {
+      padding: 0 30px;
+    }
+  }
+
+  .links,
+  .links2 {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+
+    &__button1 {
+      position: absolute;
+      top: 10%;
+      left: 15%;
+      width: 70%;
+      flex-wrap: wrap;
+    }
+
+    &__button2 {
+      position: absolute;
+      top: 70%;
+      left: 15%;
+      width: 70%;
+      flex-wrap: wrap;
+    }
+
+    &__button3 {
+      position: absolute;
+      bottom: 65%;
+      left: 15%;
+      width: 70%;
+      flex-wrap: wrap;
+    }
+
+    &__button4 {
+      position: absolute;
+      bottom: 20%;
+      left: 15%;
+      width: 70%;
+      flex-wrap: wrap;
+    }
+  }
+
+  .restauranttext {
+    width: 100%;
+  }
+  .restaurant {
+    width: 100%;
+    position: relative;
+  }
+
+  .booking {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+
+    &__table {
+      margin: 0;
+      padding: 0px 0px;
+    }
+  }
+
+  .groups {
+    margin: 0;
+    padding: 50px 0px;
+  }
+
+  label {
+    padding-left: 10px;
+  }
+}
